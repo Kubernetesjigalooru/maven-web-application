@@ -1,8 +1,4 @@
-properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', 
-artifactNumToKeepStr: '', 
-daysToKeepStr: '5', 
-numToKeepStr: '5')), 
-pipelineTriggers([pollSCM('* * * * *')])])
+
 pipeline {
     agent any
     tools {
